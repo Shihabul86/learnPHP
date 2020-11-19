@@ -2,14 +2,13 @@
 
 class MyName{
 
-    public function getName(){
-        echo "Shihabul Islam";
-    }
+    public function getName($firstName, $lastName){
+       return $firstName . " " . $lastName;    }
 
     
 }
 $a = new MyName();
-$a->getName(); 
+echo $a->getName("Shihalul", "Islam"); 
 
 
 
