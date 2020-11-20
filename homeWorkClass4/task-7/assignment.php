@@ -18,12 +18,15 @@ class assignment{
     public function shortestWord(){
 
         $arr = explode(" ", $this->statement);
-        $result = " ";
+        $shortest = strlen($arr[0]);
         foreach($arr as $value){
-            if(strlen($value) > strlen($result))
-            $result = $value; 
+            $result = strlen($value);
+            if($result < $shortest){
+
+                $shortest = $value;
+            }
         }
-        return $result;
+        return $shortest;
     }
 //the "Application" word from the sentence and replace the word with "WEBSITE"
 
