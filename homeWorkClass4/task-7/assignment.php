@@ -20,9 +20,7 @@ class assignment{
         $arr = explode(" ", $this->statement);
         $shortest = strlen($arr[0]);
         foreach($arr as $value){
-            $result = strlen($value);
-            if($result < $shortest){
-
+            if(strlen($value) < $shortest){
                 $shortest = $value;
             }
         }
